@@ -23,7 +23,7 @@
 <script>
 
 export default {
-  name: 'navbar',
+  name: 'NavBar',
 
   props: {
       drawer: Boolean
