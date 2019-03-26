@@ -43,6 +43,10 @@ export default {
   methods: {
     createUser() {
       axios({ method: "POST", "url": "http://localhost:8080/players", "data": this.input, "headers": { "content-type": "application/json" } }) 
+      this.input.firstname = ""
+      this.input.lastname = "" 
+      this.input.nickname = "" 
+      this.input.skilllevel = 0
       this.dialog = false
     }
   }
